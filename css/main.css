@@ -1,0 +1,198 @@
+#form {
+    width: 90%;
+    height: 2rem;
+    margin: auto;
+    vertical-align: top;
+}
+
+#form #text {
+    font-size: 1rem;
+    width: calc(100% - 2rem);
+    height: 100%;
+    box-sizing: border-box;
+    float: left;
+    border-radius: 1rem 0 0 1rem;
+    padding-left: 1rem;
+    transition: background-color 9999999999s;
+}
+
+#form .sp {
+    width: 2rem;
+    height: 100%;
+    position: relative;
+}
+
+#form .sp:hover #tips {
+    display: block;
+}
+
+#form #tips {
+    position: absolute;
+    left: -8rem;
+    top: 2rem;
+    width: 12rem;
+    height: 6rem;
+    border: #ccc 1px solid;
+    display: none;
+    background-color: #fff;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-align: left;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, .5) 0px 0px 3px;
+}
+
+#form .sp {
+    line-height: 2rem;
+    text-align: center;
+    display: block;
+    float: left;
+    width: 2rem;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 0 1rem 1rem 0;
+    cursor: pointer;
+}
+
+input, button {
+    outline: none;
+    border: 0px;
+    color: inherit;
+}
+
+.light #form #text {
+    border: 1px #ccc solid;
+}
+
+.light #form .sp {
+    border: 1px #ccc solid;
+}
+
+.dark #form #text {
+    border: 1px #ccc solid;
+    background-color: #fff;
+}
+
+.dark #form .sp {
+    border: 1px #ccc solid;
+    background-color: #fff;
+}
+
+.dark {
+    background-color: #000;
+}
+
+#box {
+    position: relative;
+    width: 30rem;
+    height: 20rem;
+    position: absolute;
+    left: 50%;
+    top: 6rem;
+    transform: translate(-50%, 0);
+    background-image: url('../img/bg.png');
+    background-size: 100% 100%;
+}
+
+#box img[alt=draw], #box canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#box #tab {
+    display: block;
+    width: 24rem;
+    height: 3.6rem;
+    position: absolute;
+    left: 50%;
+    top: 16.8rem;
+    transform: translate(-50%, 0);
+}
+
+#box #tab tr {
+    width: 100%;
+    display: block;
+}
+
+#box #tab td {
+    width: 50%;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+}
+
+tbody {
+    display: block;
+    width: 100%;
+}
+
+#yg {
+    display: block;
+    margin: 0 auto;
+    margin-top: 26rem;
+    width: 20rem;
+    height: 2rem;
+    background-color: #ccc;
+    border-radius: 0.2rem;
+}
+
+#yg:active {
+    background-color: rgb(177, 177, 177);
+}
+
+#setUp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border: #ccc 0.1rem solid;
+    box-sizing: border-box;
+}
+
+#setUp-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#setDown-icon {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#box input {
+    width: 60%;
+    height: 2rem;
+    border: 0;
+    border-bottom: 1px #ccc solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#box span {
+    display: inline-block;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 0.6rem;
+}
+
+#box button {
+    margin: 1rem;
+    height: 2rem;
+}
+#box button:active {
+    height: 2rem;
+    background-color: #ccc;
+}
